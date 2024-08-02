@@ -14,12 +14,12 @@ class KomputerController extends Controller
     public function index(): View
     {
         $komputer = Komputer::latest()->paginate(10);
-        return view('komputer.index', compact('komputer'));
+        return view('levelAdmin.komputer.index', compact('komputer'));
     }
 
     public function create()
     {
-        return view('komputer.create');
+        return view('levelAdmin.komputer.create');
     }
 
     public function store(Request $request)
@@ -32,7 +32,7 @@ class KomputerController extends Controller
 
         Komputer::create($request->all());
 
-        return redirect()->route('Komputer.index')
+        return redirect()->route('admin.Komputer.index')
             ->with('success', 'Komputer berhasil ditambahkan.');
     }
 
@@ -40,14 +40,14 @@ class KomputerController extends Controller
     {
         $komputer = Komputer::findOrFail($id);
 
-        return view('komputer.show', compact('komputer'));
+        return view('levelAdmin.komputer.show', compact('komputer'));
     }
 
     public function edit(string $id)
     {
         $komputer = Komputer::findOrFail($id);
 
-        return view('komputer.edit', compact('komputer'));
+        return view('levelAdmin.komputer.edit', compact('komputer'));
     }
 
     public function update(Request $request, $id): RedirectResponse
@@ -61,7 +61,7 @@ class KomputerController extends Controller
         $komputer = Komputer::findOrFail($id);
         $komputer->update($request->all());
 
-        return redirect()->route('Komputer.index')
+        return redirect()->route('admin.Komputer.index')
             ->with('success', 'Data komputer berhasil diubah!.');
     }
 
@@ -69,6 +69,6 @@ class KomputerController extends Controller
     {
         $komputer = Komputer::findOrFail($id);
         $komputer->delete();
-        return redirect()->route('Komputer.index')->with(['success' => 'Data Komputer Berhasil Dihapus!']);
+        return redirect()->route('admin.Komputer.index')->with(['success' => 'Data Komputer Berhasil Dihapus!']);
     }
 }
