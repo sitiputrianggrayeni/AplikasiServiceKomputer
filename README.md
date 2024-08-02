@@ -1,3 +1,25 @@
+<img src="https://github.com/user-attachments/assets/befb06fc-4af5-4346-ad90-e119916fbf4d">
+<img src="https://github.com/user-attachments/assets/1ce99943-0ee7-4a74-bf4c-a40a69a9e29b">
+<img src="https://github.com/user-attachments/assets/ec4cae12-2b5c-44d0-8f88-c9ecf22c132b">
+<img src="https://github.com/user-attachments/assets/aa590c72-1c26-4428-94a2-572b47a0fa6e">
+<img src="https://github.com/user-attachments/assets/836dae7a-8a5e-414d-bfc7-2232894eb3d7">
+
+![admin-pengguna]()
+![admin-home]()
+
+![login]()
+
+
+![home]()
+
+
+![customer]()
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
